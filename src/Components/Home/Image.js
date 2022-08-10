@@ -8,8 +8,8 @@ const Image = ({ image }) => {
     <button onClick={() => navigate(`/${image.id}`)} className="mx-auto">
       <figure>
         <img
-          className="p-[4px] glass bg-black hover:bg-gray-600"
-          src={image.previewURL}
+          className="w-64 p-[4px] glass bg-black hover:bg-gray-600 shadow-lg"
+          src={image.largeImageURL}
           alt="Shoes"
         />
       </figure>

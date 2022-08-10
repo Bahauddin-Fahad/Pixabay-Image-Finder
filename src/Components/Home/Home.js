@@ -19,11 +19,11 @@ const Home = () => {
     e.preventDefault();
     const query = e.target.query.value.toUpperCase();
     setSearchQuery(query);
-    console.log(query);
+    e.target.query.value = "";
   };
   return (
     <div className="m-10">
-      <div className="flex justify-between flex-col lg:flex-row mb-10 gap-4">
+      <div className="flex justify-center lg:justify-between flex-col lg:flex-row mb-10 gap-4">
         <img className="w-full max-w-[250px]" src={pixabayLogo} alt="" />
         <Searchbar getQuery={getQuery} />
       </div>
@@ -36,8 +36,8 @@ const Home = () => {
         </>
       ) : (
         <>
-          <div className="min-h-screen mt-[-168px] flex items-center justify-center">
-            <h1 className="text-6xl font-bold mb-5 text-black">
+          <div className="flex items-center justify-center">
+            <h1 className="text-2xl md:text-4xl lg:text-6xl  font-bold mb-5 text-black">
               Welcome To Pixabay
             </h1>
           </div>
