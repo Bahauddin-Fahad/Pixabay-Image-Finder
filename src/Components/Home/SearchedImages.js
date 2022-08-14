@@ -1,7 +1,7 @@
 import React from "react";
-import Image from "./Image";
+import Image from "./SearchedImage";
 
-const Images = ({ images }) => {
+const SearchedImages = ({ images }) => {
   console.log(images);
 
   return (
@@ -13,4 +13,4 @@ const Images = ({ images }) => {
   );
 };
 
-export default Images;
+export default SearchedImages;

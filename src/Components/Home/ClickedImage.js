@@ -24,7 +24,9 @@ const ClickedImage = () => {
             <img src={imageData.largeImageURL} alt="" />
           </figure>
           <div className="card-body">
-            <h2 className="card-title mx-auto text-white">{imageData.tags}</h2>
+            <h2 className="card-title mx-auto text-white">
+              Tags : {imageData.tags}
+            </h2>
           </div>
         </div>
       ))}

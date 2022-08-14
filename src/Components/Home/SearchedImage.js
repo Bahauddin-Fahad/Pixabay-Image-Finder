@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-const Image = ({ image }) => {
+const SearchedImage = ({ image }) => {
   const navigate = useNavigate();
 
   return (
@@ -17,4 +17,4 @@ const Image = ({ image }) => {
   );
 };
 
-export default Image;
+export default SearchedImage;

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useEffect } from "react";
 import axios from "axios";
-import Images from "./Images";
+import SearchedImages from "./SearchedImages";
 import Searchbar from "./Searchbar";
 import pixabayLogo from "../../Images/Logos/pixabay.png";
 
@@ -22,7 +22,7 @@ const Home = () => {
     e.target.query.value = "";
   };
   return (
-    <div className="m-10">
+    <div className="p-10">
       <div className="flex justify-center lg:justify-between flex-col lg:flex-row mb-10 gap-4">
         <img className="w-full max-w-[250px]" src={pixabayLogo} alt="" />
         <Searchbar getQuery={getQuery} />
@@ -32,7 +32,7 @@ const Home = () => {
           <h1 className="text-2xl font-bold text-black mb-5">
             Showing Results for {searchQuery}
           </h1>
-          <Images images={images} />
+          <SearchedImages images={images} />
         </>
       ) : (
         <>

@@ -1,11 +1,11 @@
 import React from "react";
 import { GoSearch } from "react-icons/go";
+
 const Searchbar = ({ getQuery }) => {
   return (
     <form onSubmit={getQuery} className="form-control">
       <div className="input-group">
         <input
-          // onChange={getQuery}
           type="text"
           placeholder="Search Here"
           className="input input-bordered"
