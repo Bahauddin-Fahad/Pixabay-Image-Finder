@@ -3,7 +3,6 @@ import { useNavigate } from "react-router-dom";
 
 const SearchedImage = ({ image }) => {
   const navigate = useNavigate();
-
   return (
     <button onClick={() => navigate(`/${image.id}`)} className="mx-auto">
       <figure>
